@@ -335,9 +335,6 @@
             let text = $(this).parent().parent().text();
             let editTextValue = editText.val();
             editText.val(text).show().trigger("select");
-            console.log("text: " + text);
-            console.log("editText: " + editText.val());
-            console.log("editTextValue: " + editTextValue);
             editText.on("keypress", function (event) {
                 if (event.key == "Enter") {
                     editTextValue = editText.val();

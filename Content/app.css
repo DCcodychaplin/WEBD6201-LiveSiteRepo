@@ -1,4 +1,3 @@
-/* Manual CSS goes here */
 .input-group-addon:first-child
 {
     border-right: 0;
@@ -34,8 +33,6 @@
     border-bottom-left-radius: 0;
 }
 
-
-
 .login
 {
     padding: 2rem 1rem;
@@ -50,4 +47,11 @@
     border-color: darkgrey;
     border-radius: .4em;
     width: 100%;
+}
+
+.edit-task
+{
+    position: relative;
+    top: -31px;
+    display: none;
 }

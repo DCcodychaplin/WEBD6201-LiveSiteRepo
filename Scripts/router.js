@@ -22,11 +22,11 @@ var core;
             this.m_linkData = "";
             this.m_routingTable = [];
         }
-        AddTable(routingTable) {
-            this.m_routingTable = routingTable;
-        }
         Add(route) {
             this.m_routingTable.push(route);
+        }
+        AddTable(routingTable) {
+            this.m_routingTable = routingTable;
         }
         Find(route) {
             return this.m_routingTable.indexOf(route);
@@ -52,16 +52,12 @@ router.AddTable([
     "/services",
     "/contact",
     "/contact-list",
-    "/projects",
+    "/products",
     "/register",
     "/login",
-    "/edit"
+    "/edit",
+    "/task-list"
 ]);
 let route = location.pathname;
-if (router.Find(route) > -1) {
-    router.ActiveLink = (route == "/") ? "home" : route.substring(1);
-}
-else {
-    router.ActiveLink = "404";
-}
+router.ActiveLink = (router.Find(route) > -1) ? (route == "/") ? "home" : route.substring(1) : "404";
 //# sourceMappingURL=router.js.map

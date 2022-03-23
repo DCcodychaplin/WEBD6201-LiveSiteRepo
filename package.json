@@ -1,9 +1,9 @@
 {
-  "name": "ice8",
+  "name": "webd6201-w2022-lab3",
   "version": "1.0.0",
-  "description": "Repo for WEBD6201-ICE8",
-  "main": "index.html",
-  "author": "Cody Chaplin",
+  "description": "WEBD6201 lab3",
+  "main": "index.js",
+  "author": "Cody Chaplin, Logan Morris",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -12,6 +12,6 @@
     "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.13"
+    "@types/jquery": "^3.5.14"
   }
 }
